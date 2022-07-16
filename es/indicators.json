@@ -39,7 +39,7 @@
         },
         {
           "id": "1-4-1",
-          "title": "Proportion of population living in households with access to basic services",
+          "title": "Proporción de la población que vive en hogares con acceso a los servicios básicos",
           "description": "",
           "keywords": "",
           "href": "/sdg-jm/es/1-4-1",
@@ -47,11 +47,11 @@
         },
         {
           "id": "1-4-2",
-          "title": "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure",
+          "title": "Proporción del total de la población adulta con derechos seguros de tenencia de la tierra: a) que posee documentación reconocida legalmente al respecto y b) considera seguros sus derechos, desglosada por sexo y tipo de tenencia",
           "description": "",
           "keywords": "",
           "href": "/sdg-jm/es/1-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-5-1",
