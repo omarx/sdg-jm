@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716135428">
+        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716150222">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -484,18 +484,6 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('data_non_statistical', true);
-        var propertyEditor = editor.getEditor('root.data_non_statistical');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: data_non_statistical');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_class'));
@@ -534,7 +522,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment");
+        var currentValue = normalizeCurrentValue('graph_title', "global_indicators.1-2-2-title");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -566,7 +554,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment");
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-2-2-title");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -765,12 +753,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-jm/assets/js/sdg.js?v=20220716135428'></script>
+<script src='/sdg-jm/assets/js/sdg.js?v=20220716150222'></script>
 
 
     
     
-    <script src="/sdg-jm/assets/js/custom.js?v=20220716135428"></script><script>
+    <script src="/sdg-jm/assets/js/custom.js?v=20220716150222"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

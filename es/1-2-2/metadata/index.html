@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716135428">
+        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716150222">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -478,7 +478,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment");
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-2-2-title");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -504,18 +504,102 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('target_name', "global_targets.1-2-title");
+        var propertyEditor = editor.getEditor('root.target_name');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: target_name');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.target_name'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('target_id', "1.2");
+        var propertyEditor = editor.getEditor('root.target_id');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: target_id');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.target_id'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_definition', "Monitoring national poverty is important for country-specific development agendas. National poverty lines are used to make more accurate estimates of poverty consistent with the country’s specific economic and social circumstances, and are not intended for international comparisons of poverty rates.");
+        var propertyEditor = editor.getEditor('root.indicator_definition');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_definition');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_definition'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('un_designated_tier', "2");
+        var propertyEditor = editor.getEditor('root.un_designated_tier');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: un_designated_tier');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.un_designated_tier'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('un_custodian_agency', "United Nations Children's Fund (UNICEFF) World Bank (WB) United Nations Development Programme (UNDP)");
+        var propertyEditor = editor.getEditor('root.un_custodian_agency');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: un_custodian_agency');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.un_custodian_agency'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('goal_meta_link', "https://unstats.un.org/sdgs/metadata/files/Metadata-01-02-01.pdf ");
+        var propertyEditor = editor.getEditor('root.goal_meta_link');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: goal_meta_link');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.goal_meta_link'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('goal_meta_link_text', "United Nations Sustainable Development Goals Metadata (PDF 894 KB)");
+        var propertyEditor = editor.getEditor('root.goal_meta_link_text');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: goal_meta_link_text');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.goal_meta_link_text'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_indicator_available'));
@@ -679,12 +763,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/sdg-jm/assets/js/sdg.js?v=20220716135428'></script>
+<script src='/sdg-jm/assets/js/sdg.js?v=20220716150222'></script>
 
 
     
     
-    <script src="/sdg-jm/assets/js/custom.js?v=20220716135428"></script><script>
+    <script src="/sdg-jm/assets/js/custom.js?v=20220716150222"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
