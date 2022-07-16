@@ -1,13 +1,16 @@
 <style>
-    #cookie-notice {padding: 0.5rem 35rem 0.5rem 2rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); height: -webkit-fill-available; background: #fff; color: rgba(0,0,0,0.8); overflow-y:auto;}
+    #cookie-notice {
+        display:block;
+        padding:20px;
+        background: #fff; color: rgba(0,0,0,0.8);}
     #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
-    @media (max-width: 767px) {
-        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+    @media only screen and (max-width: 767px) {
+        #cookie-notice span { padding-bottom:10px; margin-bottom: 1rem;}
         #cookie-notice a {position: relative; bottom: 4px;}
     }
 </style>
 <div id="cookie-notice">
-    <h1> DISCLAIMER </h1>
+    <h1 style="text-align: center"> DISCLAIMER </h1>
     <span style="display: inline-block;text-align: left;">
         By continuing on this webpage(s)……..you have acknowledged the content of this disclaimer
         and the Terms and Conditions of Data Use on the corporate website of the Statistical Institute
@@ -15,7 +18,7 @@
     </span><br>
     <span style="display: inline-block;text-align: left;">
     The Statistical Institute of Jamaica (“STATIN”) maintains this webpage(s) (the “Site”) as a courtesy to
-    those who may choose to access the Site (“Users”). The information presented on the Site is for
+    those who may chooses to access the Site (“Users”). The information presented on the Site is for
     review and research purposes only. STATIN grants permission to Users to visit the Site and to
     download and copy the information, documents and materials (collectively, “Materials”) from
     the Site for Users’ personal, commercial and non-commercial use. Postings on the Site are
@@ -43,9 +46,14 @@
     of Users. STATIN is not responsible for the accuracy, currency or reliability of the content of
     these sites. Links from STATIN to third-party sites do not constitute an endorsement or any
     guarantee by STATIN of products and services on these sites.</span>
-    <br><br>
-    <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Accept</a>
+    </br>
+    </br>
+
 </div>
+<div style="text-align: center; padding: 10px;">
+    <span  id="cookie-notice-accept" class="btn btn-primary btn-sm"> Accept</span>
+</div>
+
 <script>
     function createCookie(name,value,days) {
         var expires = "";
