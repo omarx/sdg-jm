@@ -188,7 +188,7 @@ menu:
   - path: /news
     translation_key: menu.updates
     dropdown: []
-metadata_edit_url: metadata
+metadata_edit_url: https://prose.io/#omarx/sdg-data/tree/develop/meta/[id].md
 metadata_tabs:
   - scope: national
     title: indicator.national_metadata
