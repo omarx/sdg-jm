@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716180038">
+        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220716180622">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,13 +150,9 @@ layout-config-builder
 
 <script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Microsoft está eliminando Internet Explorer. Por lo tanto, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe utilizar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, póngase en contacto con su equipo de asistencia informática.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
-<div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">Este navegador de Internet ya no es compatible</h2>
-    <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Microsoft está eliminando Internet Explorer. Por lo tanto, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe utilizar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, póngase en contacto con su equipo de asistencia informática.</p>
-</div>
-<div id="disclaimer">
-    
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<!--<div id="disclaimer">-->
+  <!--
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alfa</strong>
@@ -165,48 +161,83 @@ layout-config-builder
     
   </div>
 </div>
+-->
+<!--</div>-->
 
-</div>
+<header role="banner">
 
-<header role="banner" class="">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-jm/es/" id="home">
-    <img src="/sdg-jm/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
-</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex flex-wrap w-100 justify-content-between">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-jm/es/goals">Objetivos</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-jm/es/reporting-status">Estado de informes</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-jm/es/about">Acerca de</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-jm/es/faq">FAQ</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-jm/es/news">Actualizaciones</a>
-</li></ul>
-    
-                </div>
-                <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/sdg-jm/es/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Buscar</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </span>
+
+  <div class="header">
+    <div id="top-nav-custom">
+      <div >
+        <div class="col-xs-6 col-md-6 col-lg-6 text-left">
+
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6">
+          <div class="text-right gov-of-ja">
+            <span style="position: relative;">GOVERNMENT OF JAMAICA</span>
+            <img src='/sdg-jm/assets/img/jam.jpg' style="height: 14px; position: relative;" alt="jamaica flag" />
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
     </div>
-</form>
+    <div class="container">
+      <div id="logo-area" class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9">
+          <div class="row">
+            <div class="col-xs-1">
+              <a href='/sdg-jm/' class="logo-text-main">
+                <img src='/sdg-jm/assets/img/STATIN%20Logo.png' class="logo" alt="STATIN logo" />
+              </a>
+            </div>
+            <div class="col-xs-7">
+              <div class="logo-name"> <a href='/sdg-jm/' class="logo-text-main">Statistical Institute of Jamaica</a></div>
+              <div class="mobile-logo-name">STATIN</div>
+              <div class="tag-line">We Collect. We Analyse. We Publish</div>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://facebook.com/STATINJA/" target="_blank" class="no-hov">
+                <i class="fa fa-facebook facebook"></i>
 
+              </a>
+              <a href="https://www.youtube.com/channel/UCNc6GBwB-VPGRH1vP4bHHkQ" class="no-hov">
+                <i class="fa fa-youtube youtube" ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xs-12 col-sm-3 col-md-3">
+            <div id="search-area">
+                <div class="search-area-text">Search<i class="fa fa-search"></i></div>
+                <div class="search-area-option">
+                    <div id="subject" data-toggle="modal" data-target="#myModalsearch">
+                        Browse by subject
+                    </div>
                 </div>
-                <div class="header-toggles d-flex">
+                <div class="search-area-option">
+                    <div id="search-result" data-toggle="modal" data-target="#myModalsearch">
+                        Search Statistics
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container" id="menu">
+    <a class="navbar-brand" href="/sdg-jm/es/" id="home">
+      <img src="/sdg-jm/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
+    </a>
+
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+      
 
 
 
@@ -229,26 +260,66 @@ layout-config-builder
 
 
 
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
-    <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
-            <a class="language-toggle-link" href="/sdg-jm/8-7-1/metadata/">
-                English
-            </a>
-        </li></ul>
-</div></span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-<div id="top" tabindex=-1></div>
+    </div></div>
 
+    <nav class="navbar navbar-default" id="main-nav">
+
+      <ul class="top-level">
+        <li id="menuToggle"
+            aria-label="Menu toggle. Click to expand or collapse the menu."
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Menú</span>
+        </li>
+        <li><span data-target="search">Buscar</span></li>
+      </ul>
+
+      <form class="align-self-lg-end" id="search" action="/sdg-jm/es/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Buscar</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+      
+      <ul class="nav navbar-nav menu-target " ><li class="nav-link "><a href="/sdg-jm/es/goals">Objetivos</a></li><li class="nav-link "><a href="/sdg-jm/es/reporting-status">Estado de informes</a></li><li class="nav-link "><a href="/sdg-jm/es/about">Acerca de</a></li><li class="nav-link "><a href="/sdg-jm/es/faq">FAQ</a></li><li class="nav-link "><a href="/sdg-jm/es/news">Actualizaciones</a></li><li>
+          
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Español
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/sdg-jm/8-7-1/metadata/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+        </li></ul>
+
+      
+
+    </nav>
+  </div>
+
+</header>
 
 <div id="main-content" class="container" role="main">
   <div class="row">
@@ -679,12 +750,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/sdg-jm/assets/js/sdg.js?v=20220716180038'></script>
+<script src='/sdg-jm/assets/js/sdg.js?v=20220716180622'></script>
 
 
     
     
-    <script src="/sdg-jm/assets/js/custom.js?v=20220716180038"></script><script>
+    <script src="/sdg-jm/assets/js/custom.js?v=20220716180622"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
