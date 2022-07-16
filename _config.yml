@@ -1,5 +1,5 @@
 # Jekyll configuration for Open SDG platform
-
+#just done to recompile file 1
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@2.0.0
 
