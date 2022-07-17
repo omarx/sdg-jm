@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220717175059">
+        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220717210258">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/sdg-jm/assets/css/uswds.min.css?v=20220717175059">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/sdg-jm/assets/css/uswds.min.css?v=20220717210258">
         
 
         <!--[if IE]>
@@ -220,6 +220,131 @@ layout-indicator
   </div>
 </div>
 
+<style>
+
+    #cookiePopup {
+       background: white;
+       margin: auto;
+       margin-top: 5%;
+       width:50%;
+       height: auto;
+       align-items: center;
+       text-align: center;
+       position: sticky;
+       box-shadow: 0px 0px 15px #cccccc;
+       padding: 5px 10px;
+     }
+       #cookiePopup p{
+       text-align: center;
+       font-size: 1em;
+       color: #4e4e4e;
+     }
+     #cookiePopup button{
+       display: block;
+       width:50%;
+       border: navajowhite;
+       background: #E52B3D;
+       padding: 5px;
+       border-radius: 10px;
+       color: white;
+     }
+   </style>
+   <div id="cookiePopup">
+    <h1> DISCLAIMER </h1>
+    <p style="display: inline-block;text-align: left;">
+        By continuing on this webpage(s)……..you have acknowledged the content of this disclaimer
+        and the Terms and Conditions of Data Use on the corporate website of the Statistical Institute
+        of Jamaica: <a href="https://www.statinja.gov.jm">www.statinja.gov.jm</a> ; and you have agreed to the conditions under both.
+    </p><br>
+    <p style="display:inline-block;text-align: left;">
+    The Statistical Institute of Jamaica (“STATIN”) maintains this webpage(s) (the “Site”) as a courtesy to
+    those who may choose to access the Site (“Users”). The information presented on the Site is for
+    review and research purposes only. STATIN grants permission to Users to visit the Site and to
+    download and copy the information, documents and materials (collectively, “Materials”) from
+    the Site for Users’ personal, commercial and non-commercial use. Postings on the Site are
+    made at such times as STATIN determines in our discretion. While the information contained
+    within the Site is periodically updated, NO GUARANTEE is given that the information provided is
+    correct, complete, and up to date.
+    </p><br>
+    <p style="display:inline-block;text-align: left;">
+    STATIN does not review past postings to determine whether
+    they remain accurate, and information contained in such postings may have been superseded.
+    This data product is provided ‘as-is,’ and to the fullest extent permitted by law, STATIN makes
+    no warranty, either express or implied, including but not limited to, warranties of
+    merchantability and fitness for a particular purpose. STATIN shall not have any liability or
+    responsibility for any errors or omissions in the content of the Site, for Users’ action or inaction
+    in connection with the Site or for any damage to Users’ computer or data or any other damage
+    Users may incur in connection with the Site. In no event will STATIN be liable for any direct,
+    special, indirect, consequential or other damages, however caused. WITHOUT LIMITING THE
+    FOREGOING, STATIN ACCEPTS NO RESPONSIBILITY FOR THE THIRD-PARTY USE OR
+    INTERPRETATION OF THE DATA OR FOR INFERENCES BASED ON IT NOR DOES STATIN
+    REPRESENT OR WARRANT THAT THE SITE WILL OPERATE WITHOUT INTERRUPTION OR ERROR.
+    </p><br>
+    <p style="display: inline-block;text-align: left;">
+    The Site may contain links to other internet resources including third-party websites or services
+    that are not owned or controlled by STATIN. These links are provided solely for the convenience
+    of Users. STATIN is not responsible for the accuracy, currency or reliability of the content of
+    these sites. Links from STATIN to third-party sites do not constitute an endorsement or any
+    guarantee by STATIN of products and services on these sites.</p>
+   <div style="display: flex;
+   align-items: center;
+   justify-content: center; padding-bottom: 10px;"> <button id="acceptCookie">Accept</button> </div>
+  </div>
+   
+   <script type="text/javascript">
+    // set cookie according to you
+    var cookieName= "CodingStatus";
+    var cookieValue="Coding Tutorials";
+    var cookieExpireDays= 30;
+    
+    // when users click accept button
+    let acceptCookie= document.getElementById("acceptCookie");
+    acceptCookie.onclick= function(){
+        createCookie(cookieName, cookieValue, cookieExpireDays);
+    }
+    
+    // function to set cookie in web browser
+     let createCookie= function(cookieName, cookieValue, cookieExpireDays){
+      let currentDate = new Date();
+      currentDate.setTime(currentDate.getTime() + (cookieExpireDays*24*60*60*1000));
+      let expires = "expires=" + currentDate.toGMTString();
+      document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+      if(document.cookie){
+        document.getElementById("cookiePopup").style.display = "none";
+      }else{
+        alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
+      }
+    
+     }
+    
+    // get cookie from the web browser
+    let getCookie= function(cookieName){
+      let name = cookieName + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    // check cookie is set or not
+    let checkCookie= function(){
+        let check=getCookie(cookieName);
+        if(check==""){
+            document.getElementById("cookiePopup").style.display = "block";
+        }else{
+            
+            document.getElementById("cookiePopup").style.display = "none";
+        }
+    }
+    checkCookie();
+    </script>
 
 </div>
 
@@ -997,12 +1122,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/sdg-jm/assets/js/sdg.js?v=20220717175059'></script>
+<script src='/sdg-jm/assets/js/sdg.js?v=20220717210258'></script>
 
 
     
     
-    <script src="/sdg-jm/assets/js/uswds.min.js?v=20220717175059"></script><script>
+    <script src="/sdg-jm/assets/js/uswds.min.js?v=20220717210258"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
