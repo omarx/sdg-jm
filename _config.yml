@@ -3,8 +3,6 @@
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@2.0.0
 
-custom_css: /assets/css/uswds.min.css
-custom_js: /assets/js/uswds.min.js
 
 # Replace this title as needed.
 title: general.site_title
