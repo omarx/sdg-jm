@@ -23052,9 +23052,7 @@ button.usa-combo-box__toggle-list:focus {
         width: auto;
     }
 }
-#disclaimer-alert{
-display:none;
-}
+#disclaimer .disclaimer-alert{ display:none;}
 /*! uswds v3.0.2 */
 /*! uswds v3.0.2 */
 /*# sourceMappingURL=uswds.min.css.map */
