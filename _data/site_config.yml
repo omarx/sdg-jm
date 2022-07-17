@@ -41,10 +41,9 @@ create_pages:
   - filename: ''
     folder: /search
     layout: search
-    title: search.search
-custom_css: []
-custom_js:
-  - /assets/js/custom.js
+    title: search.search.
+custom_css: /assets/css/uswds.min.css
+custom_js: /assets/js/uswds.min.js
 data_edit_url: data
 data_fields:
   units: ''
