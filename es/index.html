@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220718003710">
+        <link rel="stylesheet" href="/sdg-jm/assets/css/style.css?v=20220718003915">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/sdg-jm/assets/css/uswds.min.css?v=20220718003710">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/sdg-jm/assets/css/uswds.min.css?v=20220718003915">
         
 
         <!--[if IE]>
@@ -288,60 +288,7 @@ layout-frontpage
    justify-content: center; padding-bottom: 10px;"> <button id="acceptCookie">Accept</button> </div>
   </div>
    
-  <script type="text/javascript">
-      // set cookie according to you
-      var cookieName= "CodingStatus";
-      var cookieValue="Coding Tutorials";
-      var cookieExpireDays= 30;
-      
-      // when users click accept button
-      let acceptCookie= document.getElementById("acceptCookie");
-      acceptCookie.onclick= function(){
-          createCookie(cookieName, cookieValue, cookieExpireDays);
-      }
-      
-      // function to set cookie in web browser
-       let createCookie= function(cookieName, cookieValue, cookieExpireDays){
-        let currentDate = new Date();
-        currentDate.setTime(currentDate.getTime() + (cookieExpireDays*24*60*60*1000));
-        let expires = "expires=" + currentDate.toGMTString();
-        document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-        if(document.cookie){
-          document.getElementById("cookiePopup").style.display = "none";
-         
-        }else{
-          alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
-        }
-      
-       }
-      
-      // get cookie from the web browser
-      let getCookie= function(cookieName){
-        let name = cookieName + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-          let c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-      // check cookie is set or not
-      let checkCookie= function(){
-          let check=getCookie(cookieName);
-          if(check==""){
-            const containers = document.querySelectorAll('.container');
-            containers.forEach(element => {
-                element.style.display='none';
-            });
-              document.getElementById("cookiePopup").style.display = "block";
-          }else{
-               <script type="text/javascript">
+      <script type="text/javascript">
       // set cookie according to you
       var cookieName= "CodingStatus";
       var cookieValue="Coding Tutorials";
@@ -361,52 +308,47 @@ layout-frontpage
         document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
         if(document.cookie){
             const containers = document.querySelectorAll('.container');
-            containers.forEach(element => {
-                element.style.display='flex';
-            });
-          document.getElementById("cookiePopup").style.display = "none";
-         
-        }else{
-          alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
-        }
-      
-       }
-      
-      // get cookie from the web browser
-      let getCookie= function(cookieName){
-        let name = cookieName + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-          let c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-      // check cookie is set or not
-      let checkCookie= function(){
-          let check=getCookie(cookieName);
-          if(check==""){
-            const containers = document.querySelectorAll('.container');
-            containers.forEach(element => {
-                element.style.display='none';
-            });
-              document.getElementById("cookiePopup").style.display = "block";
-          }else{
-                const containers = document.querySelectorAll('.container');
             containers.forEach(element => {
                 element.style.display='block';
             });
-              document.getElementById("cookiePopup").style.display = "none";
+          document.getElementById("cookiePopup").style.display = "none";
+         
+        }else{
+          alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
+        }
+      
+       }
+      
+      // get cookie from the web browser
+      let getCookie= function(cookieName){
+        let name = cookieName + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
           }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
       }
-      checkCookie();
-      </script>
+      // check cookie is set or not
+      let checkCookie= function(){
+          let check=getCookie(cookieName);
+          if(check==""){
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(element => {
+                element.style.display='none';
+            });
+              document.getElementById("cookiePopup").style.display = "block";
+          }else{
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(element => {
+                element.style.display='block';
+            });
               document.getElementById("cookiePopup").style.display = "none";
           }
       }
@@ -762,12 +704,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/sdg-jm/assets/js/sdg.js?v=20220718003710'></script>
+<script src='/sdg-jm/assets/js/sdg.js?v=20220718003915'></script>
 
 
     
     
-    <script src="/sdg-jm/assets/js/uswds.min.js?v=20220718003710"></script><script>
+    <script src="/sdg-jm/assets/js/uswds.min.js?v=20220718003915"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
